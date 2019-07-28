@@ -1,9 +1,11 @@
 #include <iostream>
-
+#include "log.h"
 
 int main(int argc, char* argv[])
 {
-    std::cout << "Hello World!" << std::endl;
+    sapphire::Log::init();
+
+    LOG_CORE_INFO("Test log info");
 
     return 0;
 }
